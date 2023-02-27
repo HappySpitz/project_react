@@ -1,0 +1,8 @@
+.Badge a{
+    text-decoration: none;
+    background-color: rgba(102, 215, 163, 0.61);
+    width: 50px;
+    margin: 3px;
+    color: white;
+    font-size: 15px;
+}

@@ -1,0 +1,33 @@
+.MovieListCard{
+    width: 33%;
+    height: 575px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-sizing: border-box;
+    margin: 15px;
+    padding: 7px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgb(102, 215, 163);
+    border-radius: 5%;
+}
+
+img{
+    width: 250px;
+}
+
+.TitleMovie{
+    color: rgb(81, 162, 125);
+    font-size: 30px;
+}
+
+.MovieListCard a{
+    text-decoration: none;
+    color: rgb(102, 215, 163);
+    font-size: 20px;
+}
+
+.MovieListCard a[class='active']{
+    color: rgba(84, 49, 77, 0);
+}

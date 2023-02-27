@@ -1,0 +1,31 @@
+.MovieInfo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 40px;
+    padding: 20px;
+    border: 1px solid rgb(81, 162, 125);
+}
+
+.Poster{
+    width: 30%
+}
+
+.Text{
+    width: 60%;
+    color: rgb(81, 162, 125);
+}
+
+.Company{
+    display: flex;
+    margin: 2px;
+}
+
+.Company img{
+    width: 70px;
+}
+
+.Genres{
+    display: flex;
+}

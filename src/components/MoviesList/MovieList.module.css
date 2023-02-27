@@ -1,0 +1,28 @@
+.Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MovieList{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(102, 215, 163);
+}
+
+.Button{
+    width: 100px;
+    height: 35px;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(81, 162, 125);
+    border: 1px solid white;
+}
+
