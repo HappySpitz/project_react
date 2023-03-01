@@ -18,8 +18,8 @@ const App = () => {
                 <Route path={'movies/search/:id/filter_genre/:id/:id'} element={<MovieInfoPage/>}/>
                 <Route path={'movies/search'} element={<SearchMoviesPage/>}/>
                 <Route path={'movies/filter_genre/:id'} element={<FilterGenreMoviesPage/>}/>
-                <Route path={'movies/:id/filter_genre/:id'} element={<FilterGenreMoviesPage/>}/>
-                <Route path={'search/:id/filter_genre/:id'} element={<FilterGenreMoviesPage/>}/>
+                <Route path={'movies/:id/movies/filter_genre/:id'} element={<FilterGenreMoviesPage/>}/>
+                <Route path={'search/:id/movies/filter_genre/:id'} element={<FilterGenreMoviesPage/>}/>
                 <Route path={'*'} element={<NotFoundPage/>}/>
             </Route>
         </Routes>

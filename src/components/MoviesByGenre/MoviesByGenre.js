@@ -7,8 +7,10 @@ import css from "../MoviesList/MovieList.module.css";
 import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
 
 const MoviesByGenre = ({state}) => {
+    localStorage.setItem('id', `${state.id}`)
+
     const {movies, prev, next} = useSelector(state => state.genres);
-    const [searchParams, setSearchParams] = useSearchParams({genre_key: `${state.id}`, page: "1"});
+    const [searchParams, setSearchParams] = useSearchParams({genre_key: `${localStorage.getItem('id')}`, page: "1"});
     const dispatch = useDispatch();
 
     useEffect(() => {
