@@ -8,6 +8,14 @@ const Header = () => {
     const searchRef = useRef();
     const navigate = useNavigate();
 
+    const changeTheme = (isChecked) => {
+        if (isChecked) {
+            document.body.setAttribute('dark', '');
+        } else {
+            document.body.removeAttribute('dark');
+        }
+    }
+
     return (
         <div className={css.Header}>
             <NavLink to={'movies'}>Movies</NavLink>
@@ -18,9 +26,9 @@ const Header = () => {
             <div className={css.User}>
                 <UserInfo/>
             </div>
-                <div>
-                    <input type="button" value="Toggle" id="toggle-theme" />
-                </div>
+            <label>
+                <input type="checkbox" onChange={changeTheme}/>
+            </label>
         </div>
     );
 };
