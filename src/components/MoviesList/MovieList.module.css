@@ -4,6 +4,14 @@
     align-items: center;
 }
 
+.Main.dark {
+    background-color: black;
+}
+
+.Main.light {
+    background-color: #ffffff;
+}
+
 .MovieList{
     width: 100%;
     display: flex;
@@ -11,9 +19,25 @@
     flex-wrap: wrap;
 }
 
+.MovieList.dark {
+    background-color: black;
+}
+
+.MovieList.light {
+    background-color: #ffffff;
+}
+
 h1{
     display: flex;
     justify-content: center;
+    color: rgb(102, 215, 163);
+}
+
+h1.dark{
+    color: rgb(255, 255, 255);
+}
+
+h1.light{
     color: rgb(102, 215, 163);
 }
 
@@ -26,3 +50,8 @@ h1{
     border: 1px solid white;
 }
 
+.Button.dark {
+    color: #000000;
+    background-color: rgb(42, 42, 42);
+    border: 1px solid #000000;
+}

@@ -1,15 +1,15 @@
 .MovieInfo{
     display: flex;
     width: 100%;
+    height: 100%;
     justify-content: center;
     box-sizing: border-box;
     margin: 40px;
     padding: 20px;
-    border: 1px solid rgb(81, 162, 125);
 }
 
 .Poster{
-    width: 30%
+    width: 35%
 }
 
 .Text{

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useContext, useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 
 import {movieActions} from "../../redux";
@@ -8,17 +8,19 @@ import {ProductionCompany} from "../ProductionCompany/ProductionCompany";
 import {ProductionCountry} from "../ProductionCountry/ProductionCountry";
 import {StarsRating} from "../StarsRating/StarsRating";
 import css from './MovieInfo.module.css';
+import { ThemeContext } from "../../contexts/ThemeContext";
 
 const MovieInfo = ({id}) => {
     const {movieById} = useSelector(state => state.movies);
     const dispatch = useDispatch();
+    const { isDarkMode } = useContext(ThemeContext);
 
     useEffect(() => {
         dispatch(movieActions.getMovieById({id: id}))
     }, [dispatch, id])
 
     return (
-        <div className={css.MovieInfo}>
+        <div className={`${css.MovieInfo} ${isDarkMode ? css.light : css.dark}`}>
             {movieById &&
                 <>
                     <div className={css.Poster}>{<PosterPreview poster_path={movieById.poster_path}/>}</div>

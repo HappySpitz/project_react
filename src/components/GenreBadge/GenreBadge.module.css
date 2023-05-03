@@ -1,8 +1,22 @@
 .Badge a{
     text-decoration: none;
-    background-color: rgba(102, 215, 163, 0.61);
     width: 50px;
     margin: 3px;
-    color: white;
     font-size: 15px;
+}
+
+.Badge.dark a[class='active']{
+    color: white;
+}
+
+.Badge.dark a{
+    color: white;
+}
+
+.Badge.light a{
+    color: rgb(47, 5, 5);
+}
+
+.Badge.light a[class='active']{
+    color: rgb(47, 5, 5);
 }
