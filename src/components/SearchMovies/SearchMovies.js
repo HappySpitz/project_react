@@ -17,7 +17,7 @@ const SearchMovies = ({state}) => {
 
     return (
         <div className={css.Main}>
-            <h1>Movies by search "{state}"</h1>
+                <h1>Movies by search "{searchParams.get('query')}"</h1>
             <div>
                 <button className={css.Button} disabled={!prev} onClick={() => setSearchParams(searchParams => ({query: searchParams.get('query'), page:+searchParams.get('page')-1}))}>prev</button>
                 <button className={css.Button} disabled={!next} onClick={() => setSearchParams(searchParams => ({query: searchParams.get('query'), page:+searchParams.get('page')+1}))}>next</button>
